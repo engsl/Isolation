@@ -8,11 +8,11 @@ Time spent: **N/A** hours spent in total
 
 The following **required** functionality is completed:
 
-- [x] Language/Home Page
-- [x] Editing Tool
-- [x] JotForm Questionnaire 
-- [x] Resource Center Page
-- [x] Hotline Connectivity
+- [] Language/Home Page
+- [] Editing Tool
+- [] JotForm Questionnaire 
+- [] Resource Center Page
+- [] Hotline Connectivity
 
 ## Video Walkthrough
 
