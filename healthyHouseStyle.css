@@ -1,0 +1,83 @@
+
+/* This section is for the body */
+body{
+    background-image: url('bkgd.jpg');
+    font-family:sans-serif;
+}
+
+/* This section is for the header */
+header{
+    font-family:Arial;
+    color:white;
+    background-color:#005687;
+    text-align:center;
+    padding:50px;
+    font-size:xx-large;
+}
+header a{ /* a stands for link */
+    line-height:1;
+    color:white;
+    padding:15px 40px;
+    background-color:rgb(0, 119, 255);
+    text-decoration:none;
+    display:inline-block;
+    font-size:large;
+    border-radius:12px;
+    box-shadow: 2px 2px black;
+}
+header a:hover{ /* hover means when your mouse is hovering over the link */
+    background-color:orange;
+    color:black;
+}
+
+/* This section is for the nav bar */
+.navbar{
+    font-family:Arial;
+    background-color:rgb(85, 85, 107);
+    text-align:center;
+    padding: 0px;
+}
+.navbar a{
+    color: white;
+    padding: 15px 25px;
+    text-decoration:none;
+    display:inline-block;
+    font-size:large;
+}
+.navbar a:hover{
+    color:black;
+    background-color:orange;
+}
+.navbar input{
+    background-color:white;
+    float:right;
+    padding:6px;
+    margin-top:8px;
+    margin-right:16px;
+    border:none;
+    font-size:17px;
+}
+
+/* this section is for the side bar */
+.sidenav{
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 420px;
+    left: 50px;
+    background: rgb(2, 24, 71);
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: black;
+    background-color:orange;
+}
