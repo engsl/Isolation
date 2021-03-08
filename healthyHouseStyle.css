@@ -81,3 +81,13 @@ header a:hover{ /* hover means when your mouse is hovering over the link */
     color: black;
     background-color:orange;
 }
+/* Sidebar Opening for Survey*/
+.s_openbutton{
+    background-color:rgb(85, 85, 107);
+    color: white;
+    float: left;
+    margin-top: 50px;
+    width: 50px;
+    height:50px;
+    border-radius: 12px;
+}

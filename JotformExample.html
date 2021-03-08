@@ -2,13 +2,35 @@
 <html>
     <link rel="stylesheet" href="healthyHouseStyle.css">
     <header>
-       <h1>Survey Tool</h1>
+        <button class="s_openbutton" onclick="s_open()">&#9776;</button>
+        <h1>Survey Tool</h1>
+        
+        <div class="s_bar" style="display:none;z-index:4" width="25%" id="mySidebar">
+            <button class="s_closebutton" onclick="s_close()">Close</button>
+            <a href="#" >Link 1</a>
+            <a href="#" >Link 2</a>
+            <a href="#" >Link 3</a>
+        </div>
+        
     </header>
 
+    
+  
+
     <body>
-        <meta charset="utf-8" />
         <script type="text/javascript" src="https://form.jotform.com/jsform/210585329741054"></script>
     </body>
 
+
+    <script>
+        function s_open() {
+            document.getElementById("mySidebar").style.width = "100%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function s_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
 
 </html>
