@@ -113,3 +113,7 @@ header a:hover{ /* hover means when your mouse is hovering over the link */
     color:black;
     
 }
+.H_line{
+    text-align: center;
+    font-size: 30px;
+}
