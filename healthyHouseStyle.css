@@ -86,8 +86,36 @@ header a:hover{ /* hover means when your mouse is hovering over the link */
     background-color:rgb(85, 85, 107);
     color: white;
     float: left;
-    margin-top: 50px;
     width: 50px;
-    height:50px;
+    height: 50px;
     border-radius: 12px;
+    text-size-adjust: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+.s_closebutton{
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    border: 10px black;
+   
+}
+.s_bar{
+    width: 250px;
+    float: left;
+    display: block;
+    background-color:white;
+    color:black;
+    margin-top: 125px;
+    border: 2px black; 
+}
+.s_bar a{
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    background-color:white;
+    color:black;
+    
 }

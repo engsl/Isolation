@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="healthyHouseStyle.css">
-    <header>
-        <button class="s_openbutton" onclick="s_open()">&#9776;</button>
-        <h1>Survey Tool</h1>
-        
+
+    <button class="s_openbutton" onclick="s_open()">&#9776;</button>
         <div class="s_bar" style="display:none;z-index:4" width="25%" id="mySidebar">
-            <button class="s_closebutton" onclick="s_close()">Close</button>
-            <a href="#" >Link 1</a>
-            <a href="#" >Link 2</a>
-            <a href="#" >Link 3</a>
+            <a class="s_closebutton" onclick="s_close()">Close X</a>
+            <a href="#" >Privacy</a>
+            <a href="#" >Support</a>
+            <a href="Hotline.html" >Contact Us</a>
+            <a href="#">Services</a>
         </div>
-        
+
+    <header>
+        <h1>Survey Tool</h1>
     </header>
 
-    
-  
 
-    <body>
+    <div class="Survey" >
         <script type="text/javascript" src="https://form.jotform.com/jsform/210585329741054"></script>
-    </body>
-
-
+    </div>
+    
     <script>
         function s_open() {
-            document.getElementById("mySidebar").style.width = "100%";
             document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("mySidebar").style.width = "25%";
+        
+            
         }
 
         function s_close() {
