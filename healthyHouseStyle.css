@@ -1,9 +1,55 @@
 
 /* This section is for the body */
 body{
-    background-image: url('bkgd.jpg');
+    background-image: url('images/bkgd.jpg');
     font-family:sans-serif;
+    position:relative;
 }
+
+/* ================================================= FAQ ================================================= */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0; 
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+/* ================================================= FAQ ================================================= */
 
 /* This section is for the header */
 header{
@@ -14,6 +60,21 @@ header{
     padding:50px;
     font-size:xx-large;
 }
+
+/* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #005687;
+    width: 0%;
+  }
+
 header a{ /* a stands for link */
     line-height:1;
     color:white;
@@ -23,7 +84,11 @@ header a{ /* a stands for link */
     display:inline-block;
     font-size:large;
     border-radius:12px;
-    box-shadow: 2px 2px black;
+    box-shadow: 4px 4px black;
+}
+header a:active {
+    transform: translateY(4px);
+    box-shadow: 4px 0px black;
 }
 header a:hover{ /* hover means when your mouse is hovering over the link */
     background-color:orange;
@@ -31,31 +96,23 @@ header a:hover{ /* hover means when your mouse is hovering over the link */
 }
 
 /* This section is for the nav bar */
-.navbar{
+#navbar{
     font-family:Arial;
     background-color:rgb(85, 85, 107);
     text-align:center;
     padding: 0px;
+    overflow:hidden;
 }
-.navbar a{
+#navbar a{
     color: white;
     padding: 15px 25px;
     text-decoration:none;
     display:inline-block;
     font-size:large;
 }
-.navbar a:hover{
+#navbar a:hover{
     color:black;
     background-color:orange;
-}
-.navbar input{
-    background-color:white;
-    float:right;
-    padding:6px;
-    margin-top:8px;
-    margin-right:16px;
-    border:none;
-    font-size:17px;
 }
 
 /* this section is for the side bar */
@@ -80,4 +137,8 @@ header a:hover{ /* hover means when your mouse is hovering over the link */
 .sidenav a:hover {
     color: black;
     background-color:orange;
+}
+
+html {
+    scroll-behavior: smooth;
 }
